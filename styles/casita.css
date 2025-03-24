@@ -1,0 +1,243 @@
+/* Phase 5 Styles JavaJam Ramirez-Miller */
+
+/* Box-Sizing for all elements*/
+{
+	box-sizing: border-box;
+}
+/* Styles for the Body */  
+body {
+      background-color:#4D70B3; /* Background color set */
+      color: #6BAE6F; /* text color set */
+	  font-family:Tahoma, Arial, sans-serif; /* Font Family set */
+	  margin: 0; /* Reset defualt margin */
+	 }
+/* Styles for the Wrapper */	
+#wrapper {
+    background-color:#E63946; /* Background color set */
+    padding: 0; /*Remove padding*/
+}
+/* Styles for the Header */
+header {
+		background-color: #76B041; /* Background color set */
+		background-image: url(../images/logo.gif); /* Set background image */
+		background-repeat: no-repeat; /* not allowing logo to repeat */
+		color: #231814;  /* text color set */
+		height: 128px; /* Set height */
+        padding-left:105px; /* set padding on left 240 pixels*/
+		padding-top: 5px; /* set padding on top 5 pixels*/
+		padding-bottom: 5px; /* set padding on bottom 5 pixels*/
+	   }
+header a {text-decoration: none;} /* Remove underline from links */
+header a:link {color: #231814;} /* Link Color */
+header a:visited {color: #231814;} /* Visited color */
+header a:hover {color: #F4A261;} /* Hover link color */
+/* Styles for the Headings */
+h1 {font-size: 2em;/* set font size for h1*/}
+h2 {color: #F4A261;/* set the text color for h2*/}
+h3, dt {color: #E63946; /*Set text clor for h3 & dt */}
+h4 {
+    background-color: #4D70B3; /*Set background color for h4 */
+    font-size: 1.2em; /*Set font size for h4 */
+    padding-left: .5em; /*Add left padding */
+    padding-bottom: 0; /*Add bottom padding */
+	text-transform: uppercase; /*capitalize the text */
+	border-bottom: 1px solid #221811; /*Add bottom border */
+	clear: left; /*Clear left float */
+   }
+   form {
+	   width: 40%; /*set width*/
+	   display: grid; /*use grid layout*/
+	   grid-gap: 1em; /* set gap between items*/
+	   gap: 1em; /* set gap*/
+	   grid-template-columns: 6em 1fr; /*define grid temp columns*/
+   }
+   input[type="submit"] {
+	   grid-column: 2/3; /*set grid column span*/
+	   width: 9em; /*set width*/
+   }
+/* Styles for Navigation */
+nav {
+     font-size: 1.5em; /*set nav font size to 1.5em */
+	 /*padding-top: 5px; /*Top padding */
+     /*padding-bottom: 5px; /*bottom padding */
+	 /*font-weight: bold; /* Set font weight */
+     text-align: center; /* Text aligned to the center */
+	 /*float: left; /* clear left float*/
+	 /*width: 200px; /* sets the nav to 200 pixels in width*/
+    }
+nav a {
+       text-decoration: none; /*Remove underline from links */
+      }
+/*psudo navigation bar style*/
+nav a:link {color: #76B041; /* Link Color*/}
+nav a:visited {color: #FFD166; /*Visited Link Color*/}
+nav a:hover {color: #F4A261; /* Hover link color*/}
+nav ul {
+	display: flex; /*Use flexbox*/
+	flex-direction: column; /*Arrange items in a column*/
+	font-size: 1.25em; /*font size*/
+	list-style-type: none; /*takes away list markers*/
+	margin: 0; /**/
+	padding: 0; /*sets left padding to 0*/
+}
+nav li {
+	border-bottom: 1px solid #FFD166; /*Add bottom border */
+	padding: .5em 1em; /* Add padding */
+}
+/*Styles for Main Content*/
+
+main{
+	background-color: #F8F5F1; /* Background Color */
+	display: block; /* Display as block element */
+	padding: 0 0 2em 0; /* add padding*/
+}
+h2,h3,h4,p,div,ul,dl {
+      padding-left: 1em; /*left padding */
+      padding-right: 1em; /*right padding */
+     }
+main ul{
+	padding-left: 2em; /*left padding */
+}
+/*Styles for Details */
+.details {
+          padding-left: 20%; /*Add left padding */
+          padding-right: 20%; /*Add right padding */ 
+		  overflow: auto; /*clear a float */
+         }
+/*Styles for Images */
+img{
+    padding-left: 10px; /*Add left padding */
+    padding-right: 10px; /*Add right padding */ 
+   }
+/*Styles for Home Hero */
+#homehero {
+            background-image: url(../images/logo.png); /*Set background image */
+            height: 300px; /*set height of image*/
+            background-size: 100% 100%;  /*Cover the entire element with the background img */
+            background-repeat: no-repeat;  /*Prevent background img form repeating */
+          }
+#heromugs {
+            background-image: url(../images/sweetroom.jpg); /*Set background image */
+            height: 300px; /*set height of image*/
+            background-size: 100% 100%;  /*Cover the entire element with the background img */
+            background-repeat: no-repeat;  /*Prevent background img form repeating */
+          }
+#heroguitar {
+            background-image: url(../images/outside.png); /*Set background image */
+            height: 300px; /*set height of image*/
+            background-size: 100% 100%;  /*Cover the entire element with the background img */
+            background-repeat: no-repeat;  /*Prevent background img form repeating */
+          }
+/* Styles for the Footer */
+footer { 
+		background-color:#4D70B3; /* Background color set */ 
+        font-size: .60em; /* Font size set */ 
+        font-style: italic;  /* Font style set to italics */ 
+		text-align: center; /* Text aligned to the center */
+        padding: 1em; /*padding*/
+		border-top: 2px solid #E63946; /*adding a border size/color */
+	   }
+/* Table Styles */
+table {
+    margin: auto; /* center the table */
+    width: 90%; /* set width to 90% of the container */
+    border-spacing: 0; /* remove spacing between table cells */
+}
+th,td {
+    padding: 10px; /* adding padding to table cells */
+}
+tr:nth-of-type(odd) {
+    background-color: #FFD166; /* Adding color for odd rows */
+}
+/* Form Styles*/
+form{
+	display: flex; /*using a flexbox*/
+	flex-direction: column; /*arrange in columns*/
+	padding-left: 1em; /*padding*/
+	width: 80%; /*set width*/
+}
+input,textarea {
+	margin-bottom: .5em; /*add bottom margin*/
+} 
+/* Audio Styles */
+audio { display: block;
+		margin-top: 2em;
+}
+/* Styles for Mobile*/
+#mobile {
+	display: inline; /*Display as inline element*/
+}
+/* Styles for Desktop */
+#desktop {
+	display: none; /* Hide element */
+}
+/*Media Query for Desktop */
+@media (min-width: 600px) {
+	header {
+		padding-left: 0; /*remove left padding*/
+        text-align: center; /*align text to center*/}
+	h1 {font-size: 3em; /*font size for h1*/}
+	nav ul {
+		flex-flow: row nowrap; /*arrange items in a single row*/
+        justify-content: space-around; /* distribute items evenly */
+	}
+	nav li {
+		border-bottom: none; /* remove bottom border*/
+	}
+	#homehero {
+		background-image: url(../images/caterpillar.jpg); /*change image*/
+		height: 50vh; /* set height of viewpoint */
+	}
+	#heromugs {
+		background-image: url(../images/sweets.png); /*change image*/
+	}
+	#heroguitar {
+		background-image: url(../images/wideoutside.png); /*change image*/
+	}
+	#flow {
+		display: flex; /*use flexbox*/
+		flex-direction: row; /* arrange items in a row */
+	}
+	#mobile {
+		display: none; /*hide element*/
+	}
+	#desktop {
+		display: inline; /*display as inline element*/
+	}
+	.details {
+		display: flex; /* use flexbox*/
+		flex-direction: row;/*arrange items in a row */
+	}
+	h4 {
+		margin-left: 10%;/* add left margin */
+		margin-right: 10%;/* add right margin */
+	}
+}
+/* Media Query for Large Screens */
+@media (min-width: 1024px) {
+	@supports (display: grid) {
+		header {
+			grid-area: header; /* set grid area */
+		}
+		nav {
+			grid-area: nav; /* set grid area */
+		}
+		footer {
+			grid-area: footer; /* set grid area */
+		}
+		#wrapper {
+			display: grid; /* use grid layout */
+			grid-template:
+			"header header"
+			"nav    main"
+			"footer footer"
+			/ 200px; /* set grid template */
+		}
+		nav ul {
+			flex-direction: column; /* arrange items in a column */
+		}
+		header {
+			background-image: url(../images/bluelogo.jpg); /*change image*/
+		}
+	}
+}	  
